@@ -1,0 +1,183 @@
+{
+  "site": {
+    "theme": "light-academic",
+    "photo": "assets/photo.jpg",
+    "cv_file": "CV/Yuxuan_Chen_CV.pdf",
+    "footer_year": "2026",
+    "bio_use": "standard",
+    "goatcounter": ""
+  },
+  "name": "Yuxuan Chen",
+  "first_name": "Yuxuan",
+  "last_name": "Chen",
+  "title": "M.S. Candidate in Power Engineering and Engineering Thermophysics",
+  "institution": "Tianjin University",
+  "institution_short": "Tianjin University",
+  "since": "2024",
+  "email": "yuxuan_chen0112@tju.edu.cn",
+  "tagline": "Scientific ML · Viscoelastic Turbulence · Reduced-Order Modeling",
+  "fields": "Physics-guided machine learning · Viscoelastic & complex flows · Neural operators · Long-horizon flow forecasting",
+  "address_line1": "School of Mechanical Engineering, Tianjin University",
+  "address_line2": "Tianjin, China",
+  "affiliations": [
+    "Prof. Hongna Zhang's group, TJU",
+    "Former intern, AISI DeepFlame",
+    "National Scholarship 2026",
+    "Applying for PhD, Fall 2027"
+  ],
+  "links": {
+    "scholar": "https://scholar.google.com/citations?hl=en&user=SWy_26EAAAAJ",
+    "orcid": "",
+    "linkedin": "",
+    "x": "",
+    "github": "",
+    "website": "",
+    "nber": ""
+  },
+  "bio": {
+    "short": "Yuxuan Chen is an M.S. student at Tianjin University who builds physics-guided machine-learning models for viscoelastic and complex flows.",
+    "standard": "Yuxuan Chen is a third-year M.S. student in Power Engineering and Engineering Thermophysics at Tianjin University, advised by Prof. Hongna Zhang. The work starts from a practical gap in viscoelastic turbulence: experiments can measure velocity, but not the polymer stress that drives the flow. PhySF-UNO, published in Physics of Fluids, reconstructs the full conformation tensor from velocity with a Fourier-operator U-Net and a positive-definiteness constraint. FAMIR, the follow-up project, uses the future state available during training to make long recursive flow forecasts drift less, tested on viscoelastic channel flow, Rayleigh–Bénard convection and rotating shallow water. Before this, Yuxuan studied engineering mechanics at Tianjin University and spent a summer at the AI for Science Institute, Beijing, building generative models for centrifugal sprays. Yuxuan is applying for PhD programs starting in Fall 2027.",
+    "extended": "Yuxuan Chen is a third-year M.S. student in Power Engineering and Engineering Thermophysics at Tianjin University, advised by Prof. Hongna Zhang, after a B.Eng. in Engineering Mechanics at the same university. The undergraduate thesis used OpenFOAM to simulate drag reduction and heat transfer of viscoelastic fluids in a natural-circulation safety system, and the high-Weissenberg cases that were hard to compute led directly to machine learning. PhySF-UNO, published in Physics of Fluids, reconstructs the hidden polymer conformation tensor from velocity fields in elasto-inertial turbulence; Fourier blocks on the U-Net skip connections capture the non-local coupling, and a positive-definiteness loss cuts non-physical tensors from about 24% to 0.05%. FAMIR asks how to forecast such flows stably: a teacher that sees the true next state and a student that sees only the history drive one shared latent transition, and only the student is deployed. At the AI for Science Institute, Beijing, Yuxuan built a CGAN–CVAE framework that predicts centrifugal-spray images and cone angles from nozzle conditions, which received an Outstanding Paper Award at the CSET annual conference. Yuxuan is applying for PhD programs starting in Fall 2027."
+  },
+  "about": {
+    "lead": "Machine learning that respects the physics of viscoelastic and complex flows: reconstructing the stress we cannot measure, and forecasting flows that stay stable over long horizons.",
+    "where_heading": "Where the work is going",
+    "where_body": "Next steps: reconstructing polymer stress from sparse, noisy PIV data; generative and stochastic reconstruction with uncertainty; and stable learned surrogates and closures that can sit inside real simulations."
+  },
+  "research_intro": "Neural operators, physical constraints and latent dynamics for viscoelastic turbulence, convection and other complex flows.",
+  "education": [
+    {
+      "degree": "M.S., Power Engineering and Engineering Thermophysics",
+      "institution": "Tianjin University",
+      "year": "2024–2027 (expected)",
+      "note": "GPA 86.6/100"
+    },
+    {
+      "degree": "B.Eng., Engineering Mechanics",
+      "institution": "Tianjin University",
+      "year": "2024",
+      "note": "GPA 86/100"
+    }
+  ],
+  "stats": [
+    {
+      "value": "2",
+      "label": "First-author papers (Physics of Fluids, arXiv)"
+    },
+    {
+      "value": "2",
+      "label": "Oral talks at national conferences"
+    },
+    {
+      "value": "2026",
+      "label": "National Scholarship for Graduate Students"
+    },
+    {
+      "value": "Award",
+      "label": "Outstanding Paper, CSET Annual Conference"
+    }
+  ],
+  "publications": [
+    {
+      "type": "peer_reviewed",
+      "marker": "2026",
+      "title": "A Physics-guided Spectral-Fourier U-Net Operator: From velocity field to hidden tensor field in viscoelastic turbulence",
+      "authors": "Y. Chen, Y. Wang, H. Cheng, H. Zhang, Y. Li, W. Zhang, X. Li & F. Li",
+      "note": "",
+      "venue": "Physics of Fluids 38, 073103",
+      "tag": "First author",
+      "url": "https://doi.org/10.1063/5.0333863",
+      "featured": true,
+      "venue_short": "Physics of Fluids",
+      "year": "2026",
+      "badge": ""
+    },
+    {
+      "type": "working_paper",
+      "marker": "2026",
+      "title": "FAMIR: Future-aligned latent dynamics for complex-flow forecasting",
+      "authors": "Y. Chen, Y. Wang, H. Cheng, H. Zhang, W. Zhang, Y. Li, X. Li & F. Li",
+      "note": "arXiv:2610.36515",
+      "venue": "",
+      "tag": "First author",
+      "url": "http://arxiv.org/abs/2610.36515",
+      "featured": true,
+      "venue_short": "arXiv preprint",
+      "year": "2026",
+      "badge": ""
+    },
+    {
+      "type": "peer_reviewed",
+      "marker": "2025",
+      "title": "Characterizing centrifugal sprays with deep generative models (in Chinese)",
+      "authors": "G. Liu*, Y. Chen*, J. He, K. He, R. Mao & Z. Chen (*equal contribution)",
+      "note": "",
+      "venue": "Annual Conference of the Chinese Society of Engineering Thermophysics (CSET), Multiphase Flow",
+      "tag": "Outstanding Paper Award",
+      "url": "",
+      "featured": true,
+      "venue_short": "CSET Conference",
+      "year": "2025",
+      "badge": "Outstanding Paper Award"
+    }
+  ],
+  "teaching": [
+    {
+      "course": "Long-horizon forecasting of complex flows via latent-space dynamics (FAMIR), with Prof. Hongna Zhang",
+      "terms": "2026–now"
+    },
+    {
+      "course": "Physics-guided operator learning for viscoelastic stress prediction (PhySF-UNO), with Prof. Hongna Zhang",
+      "terms": "2025–2026"
+    },
+    {
+      "course": "Research intern, DeepFlame team, AI for Science Institute, Beijing (AISI)",
+      "terms": "Summer 2025"
+    },
+    {
+      "course": "Undergraduate thesis: OpenFOAM simulation of viscoelastic drag reduction in a passive safety system",
+      "terms": "2023–2024"
+    }
+  ],
+  "advising": [
+    {
+      "name": "National Scholarship for Graduate Students",
+      "detail": "Ministry of Education, China",
+      "note": "2026"
+    },
+    {
+      "name": "Outstanding Paper Award",
+      "detail": "CSET Annual Conference",
+      "note": "2025"
+    },
+    {
+      "name": "First-Class Academic Scholarship",
+      "detail": "Tianjin University",
+      "note": "2024"
+    },
+    {
+      "name": "Second Prize, Weichai Cup Energy Conservation Competition",
+      "detail": "",
+      "note": "2023"
+    },
+    {
+      "name": "Third Prize, National College Student Mathematics Competition",
+      "detail": "",
+      "note": "2021"
+    }
+  ],
+  "media": [
+    {
+      "outlet": "14th National Conference on Fluid Mechanics · Qingdao",
+      "headline": "Reduced-order prediction of complex flows via latent-space dynamics (oral)",
+      "date": "Aug 2026",
+      "url": ""
+    },
+    {
+      "outlet": "4th Symposium on Non-Newtonian Fluid Mechanics · Harbin",
+      "headline": "A physics-guided Spectral-Fourier U-Net operator for viscoelastic turbulence (oral)",
+      "date": "Jul 2026",
+      "url": ""
+    }
+  ]
+}
