@@ -30,7 +30,7 @@
     "orcid": "",
     "linkedin": "",
     "x": "",
-    "github": "https://github.com/yxchen112",
+    "github": "",
     "website": "",
     "nber": ""
   },
@@ -50,13 +50,13 @@
       "degree": "M.S., Power Engineering and Engineering Thermophysics",
       "institution": "Tianjin University",
       "year": "2024–2027 (expected)",
-      "note": "GPA 86.6/100"
+      "note": ""
     },
     {
       "degree": "B.Eng., Engineering Mechanics",
       "institution": "Tianjin University",
       "year": "2024",
-      "note": "GPA 86/100"
+      "note": ""
     }
   ],
   "stats": [
@@ -71,10 +71,6 @@
     {
       "value": "2026",
       "label": "National Scholarship for Graduate Students"
-    },
-    {
-      "value": "Award",
-      "label": "Outstanding Paper, CSET Annual Conference"
     }
   ],
   "publications": [
@@ -121,20 +117,6 @@
           "url": "https://github.com/yxchen112/FAMIR"
         }
       ]
-    },
-    {
-      "type": "peer_reviewed",
-      "marker": "2025",
-      "title": "Characterizing centrifugal sprays with deep generative models (in Chinese)",
-      "authors": "G. Liu*, Y. Chen*, J. He, K. He, R. Mao & Z. Chen (*equal contribution)",
-      "note": "",
-      "venue": "Annual Conference of the Chinese Society of Engineering Thermophysics (CSET), Multiphase Flow",
-      "tag": "Outstanding Paper Award",
-      "url": "",
-      "featured": true,
-      "venue_short": "CSET Conference",
-      "year": "2025",
-      "badge": "Outstanding Paper Award"
     }
   ],
   "teaching": [
@@ -162,19 +144,9 @@
       "note": "2026"
     },
     {
-      "name": "Outstanding Paper Award",
-      "detail": "CSET Annual Conference",
-      "note": "2025"
-    },
-    {
       "name": "First-Class Academic Scholarship",
       "detail": "Tianjin University",
       "note": "2024"
-    },
-    {
-      "name": "Second Prize, Weichai Cup Energy Conservation Competition",
-      "detail": "",
-      "note": "2023"
     },
     {
       "name": "Third Prize, National College Student Mathematics Competition",
@@ -199,7 +171,6 @@
   "updated": "November 18, 2026",
   "simple": {
     "my_name_variants": [
-      
       "Y. Chen"
     ],
     "info_lines": [
@@ -213,7 +184,6 @@
         "text": "Advisor: Prof. Hongna Zhang"
       }
     ],
-    "email_display": "yuxuan_chen0112 AT tju DOT edu DOT cn",
     "about": [
       "I am a third-year M.S. student in Power Engineering and Engineering Thermophysics at Tianjin University, advised by Prof. Hongna Zhang. I received my B.Eng. in Engineering Mechanics from Tianjin University in 2024. In the summer of 2025 I was a research intern in the DeepFlame team at the AI for Science Institute, Beijing (AISI), working with Prof. Zhi X. Chen.",
       "I use physics-guided machine learning to study viscoelastic and complex flows. Experiments can measure velocity but not the polymer stress that drives elastic turbulence, so my first project reconstructs the conformation tensor from velocity with a neural operator that keeps the tensor positive definite. My second project, FAMIR, asks how to forecast such flows stably over long horizons.",
@@ -246,6 +216,7 @@
         "date": "2025.06",
         "text": "Joined the DeepFlame team at AISI as a research intern."
       }
-    ]
+    ],
+    "icon": "assets/icon.svg"
   }
 }

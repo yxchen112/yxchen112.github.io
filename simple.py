@@ -28,8 +28,9 @@ def _page(d, title, current, body):
     cv = (d.get("site") or {}).get("cv_file", "")
     if cv:
         menu.append('<div class="menu-item"><a href="%s" target="_blank">CV</a></div>' % E(cv, quote=True))
-    photo = (d.get("site") or {}).get("photo", "")
-    icon = '<img src="%s" alt="">' % E(photo, quote=True) if photo else ""
+    icon_src = (d.get("simple") or {}).get("icon", "")
+    icon = '<img src="%s" alt="">' % E(icon_src, quote=True) if icon_src else ""
+    favicon = '<link rel="icon" href="%s">' % E(icon_src, quote=True) if icon_src else ""
     return """<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,6 +39,7 @@ def _page(d, title, current, body):
 <title>{title}</title>
 <meta name="description" content="{desc}">
 <link rel="stylesheet" href="simple.css">
+{favicon}
 </head>
 <body>
 <header class="topbar">
@@ -56,7 +58,7 @@ def _page(d, title, current, body):
 </div>
 </body>
 </html>
-""".format(title=E(title), desc=E((d.get("bio") or {}).get("short", "")), icon=icon,
+""".format(title=E(title), desc=E((d.get("bio") or {}).get("short", "")), icon=icon, favicon=favicon,
            menu="\n    ".join(menu), body=body, updated=E(d.get("updated", "")))
 
 
@@ -71,8 +73,8 @@ def build_home(d):
             info.append(_link(line["text"], line["url"]))
         else:
             info.append(E(line["text"]))
-    if s.get("email_display"):
-        info.append("<b>E-mail</b>: %s" % E(s["email_display"]))
+    if d.get("email"):
+        info.append('<b>E-mail</b>: <a href="mailto:%s">%s</a>' % (E(d["email"], quote=True), E(d["email"])))
     btns = []
     for key, label in (("scholar", "Google Scholar"), ("github", "GitHub"), ("orcid", "ORCID")):
         if links.get(key):
