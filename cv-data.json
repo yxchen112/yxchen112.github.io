@@ -1,6 +1,6 @@
 {
   "site": {
-    "theme": "light-academic",
+    "theme": "simple",
     "photo": "assets/photo.jpg",
     "cv_file": "CV/Yuxuan_Chen_CV.pdf",
     "footer_year": "2026",
@@ -30,7 +30,7 @@
     "orcid": "",
     "linkedin": "",
     "x": "",
-    "github": "",
+    "github": "https://github.com/yxchen112",
     "website": "",
     "nber": ""
   },
@@ -90,7 +90,13 @@
       "featured": true,
       "venue_short": "Physics of Fluids",
       "year": "2026",
-      "badge": ""
+      "badge": "",
+      "links": [
+        {
+          "label": "Paper",
+          "url": "https://doi.org/10.1063/5.0333863"
+        }
+      ]
     },
     {
       "type": "working_paper",
@@ -104,7 +110,17 @@
       "featured": true,
       "venue_short": "arXiv preprint",
       "year": "2026",
-      "badge": ""
+      "badge": "",
+      "links": [
+        {
+          "label": "arXiv",
+          "url": "http://arxiv.org/abs/2610.36515"
+        },
+        {
+          "label": "Code",
+          "url": "https://github.com/yxchen112/FAMIR"
+        }
+      ]
     },
     {
       "type": "peer_reviewed",
@@ -179,5 +195,57 @@
       "date": "Jul 2026",
       "url": ""
     }
-  ]
+  ],
+  "updated": "November 18, 2026",
+  "simple": {
+    "my_name_variants": [
+      
+      "Y. Chen"
+    ],
+    "info_lines": [
+      {
+        "text": "M.S. Candidate, Power Engineering and Engineering Thermophysics"
+      },
+      {
+        "text": "School of Mechanical Engineering, Tianjin University"
+      },
+      {
+        "text": "Advisor: Prof. Hongna Zhang"
+      }
+    ],
+    "email_display": "yuxuan_chen0112 AT tju DOT edu DOT cn",
+    "about": [
+      "I am a third-year M.S. student in Power Engineering and Engineering Thermophysics at Tianjin University, advised by Prof. Hongna Zhang. I received my B.Eng. in Engineering Mechanics from Tianjin University in 2024. In the summer of 2025 I was a research intern in the DeepFlame team at the AI for Science Institute, Beijing (AISI), working with Prof. Zhi X. Chen.",
+      "I use physics-guided machine learning to study viscoelastic and complex flows. Experiments can measure velocity but not the polymer stress that drives elastic turbulence, so my first project reconstructs the conformation tensor from velocity with a neural operator that keeps the tensor positive definite. My second project, FAMIR, asks how to forecast such flows stably over long horizons.",
+      "<b>I am applying for PhD programs starting in Fall 2027.</b>"
+    ],
+    "interests": [
+      "Physics-guided machine learning for viscoelastic and elasto-inertial turbulence",
+      "Neural operators for field reconstruction and closure modeling",
+      "Reduced-order modeling and stable long-horizon forecasting of complex flows",
+      "Generative models for flow reconstruction and uncertainty quantification"
+    ],
+    "news": [
+      {
+        "date": "2026.10",
+        "text": "FAMIR preprint is out on <a href=\"http://arxiv.org/abs/2610.36515\" target=\"_blank\">arXiv</a>, with <a href=\"https://github.com/yxchen112/FAMIR\" target=\"_blank\">code</a>."
+      },
+      {
+        "date": "2026.08",
+        "text": "Oral talk at the 14th National Conference on Fluid Mechanics, Qingdao."
+      },
+      {
+        "date": "2026.07",
+        "text": "PhySF-UNO is published in <a href=\"https://doi.org/10.1063/5.0333863\" target=\"_blank\"><i>Physics of Fluids</i></a>."
+      },
+      {
+        "date": "2026.07",
+        "text": "Oral talk at the 4th Symposium on Non-Newtonian Fluid Mechanics, Harbin."
+      },
+      {
+        "date": "2025.06",
+        "text": "Joined the DeepFlame team at AISI as a research intern."
+      }
+    ]
+  }
 }

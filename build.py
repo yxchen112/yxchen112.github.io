@@ -248,6 +248,12 @@ def main():
     ctx = prepare_context(raw)
 
     chosen = args.theme or (raw.get("site", {}) or {}).get("theme", "light-academic")
+    if chosen == "simple":
+        from simple import build_simple
+        os.makedirs(args.out, exist_ok=True)
+        build_simple(raw, args.out)
+        print("Built %s  (theme: simple -> index.html, publications.html)" % os.path.abspath(args.out))
+        return
     if chosen not in THEMES:
         print("warning: unknown theme %r, falling back to light-academic" % chosen)
         chosen = "light-academic"
